@@ -1,4 +1,7 @@
+import { Console } from "console";
 import Head from "next/head";
+import Navigation from "../components/Navigation";
+import Grid from "../components/Grid";
 
 const Home = () => (
   <div className="bg-green-100">
@@ -7,41 +10,23 @@ const Home = () => (
     </Head>
     <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-semibold text-xl tracking-tight">Logo</span>
+        <span className="font-semibold text-xl tracking-tight">.dragosN</span>
       </div>
-      <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto ">
-        <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto justify-end">
-          <a
-            href="#home"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 mr-4 hover:bg-white hover:text-teal-500 rounded-full py-3 px-6"
-          >
-            Home
-          </a>
-          <a
-            href="#services"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:bg-white mr-4 hover:text-teal-500 rounded-full py-3 px-6"
-          >
-            Services
-          </a>
-          <a
-            href="#blog"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:bg-white mr-4 hover:text-teal-500 rounded-full py-3 px-6"
-          >
-            Blog
-          </a>
-          <a
-            href="#contact"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:bg-white hover:text-teal-500 rounded-full py-3 px-6"
-          >
-            Contact
-          </a>
-        </div>
-      </div>
+      <Navigation />
     </nav>
-
-    <div className="flex items-center min-h-screen">
+    {/* <div className="flex items-center min-h-screen">
       <div className="w-1/2 p-4">
-        <p>This is where you can add your brief description.</p>
+        <p>
+          As a Scrum Master and software engineer, I am passionate about the
+          people side of the software engineering process. I enjoy taking a
+          holistic view of a system and finding ways to improve it. I am not
+          afraid to challenge the status quo and am always looking for new and
+          innovative ways to drive progress. In my role, I strive to create a
+          collaborative and inclusive environment where all team members feel
+          valued and supported. With a strong background in both technical and
+          interpersonal skills, I am well-equipped to lead and support
+          high-performing software development teams
+        </p>
       </div>
       <div className="w-1/2">
         <img
@@ -50,7 +35,8 @@ const Home = () => (
           className="object-cover"
         />
       </div>
-    </div>
+    </div> */}
+    <Grid />
   </div>
 );
 
